@@ -22,6 +22,7 @@ export default function Header() {
         <li>Sobre</li>
         <li>Projetos</li>
         <li>Contato</li>
+        
       </ul>
       <div className={styles.social}>
         <a href={instagramLink} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} /></a>

@@ -31,8 +31,6 @@ export default function Home() {
 
       <section className={styles.mainContainer}>
         <div className={styles.mainText}>
-
-
           <h1>Build your next idea even faster.</h1>
           <p>Beautifully designed, expertly crafted components and templates, built by the makers of Tailwind CSS. The perfect starting point for your next project.</p>
           <button>More</button>

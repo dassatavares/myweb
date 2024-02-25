@@ -1,9 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 import styles from '../styles/Index.module.scss';
 import Header from '../components/Header';
-
-
 
 export default function Home() {
 
@@ -24,17 +22,28 @@ export default function Home() {
     });
   }, []);
 
+  const bDay = () => {
+
+    var date = new Date()
+    var day = date.getDate()
+    var month = date.getMonth() + 1
+    var year = date.getFullYear() + 1
+
+    console.log(day + '/' + month + '/' + year)
+
+    
+
+  }
+  
+  bDay()
+
+
   return (
     <>
 
-      <Header />
 
       <section className={styles.mainContainer}>
-        <div className={styles.mainText}>
-          <h1>Build your next idea even faster.</h1>
-          <p>Beautifully designed, expertly crafted components and templates, built by the makers of Tailwind CSS. The perfect starting point for your next project.</p>
-          <button>More</button>
-        </div>
+        <Header />       
       </section>
 
       <div className={styles.level}>

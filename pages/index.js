@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 
+
 import styles from '../styles/Index.module.scss';
 import Header from '../components/Header';
 

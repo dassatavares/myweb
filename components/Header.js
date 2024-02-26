@@ -1,3 +1,5 @@
+import React, { useState } from 'react'
+
 import styles from '../styles/Header.module.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -20,6 +22,13 @@ export default function Header() {
         {/* <div className={styles.logo}>
           <FontAwesomeIcon icon={faCodepen} />
         </div> */}
+        <div className={styles.switcher}>
+          <span>PT</span>
+          <label>
+            <input type="checkbox" defaultChecked /><b></b>
+          </label>
+          <span>EN</span>
+        </div>
 
         <ul>
           <li>Sobre</li>
@@ -43,14 +52,6 @@ export default function Header() {
           <a href={socialLinks.behance} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faBehance} />
           </a>
-        </div>
-
-        <div className={styles.switcher}>
-          <span>PT</span>
-          <label>
-            <input type="checkbox" defaultChecked /><b></b>
-          </label>
-          <span>EN</span>
         </div>
       </header>
 
